@@ -1,0 +1,28 @@
+{
+  "name": "google-directory-tree",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon --watch src -e html,js,vue --exec \"npm run build\" ",
+    "build": "parcel build ./public/index.html --dist-dir ./appsscript",
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gpull": "clasp pull",
+    "gpush": "clasp push",
+    "gcreate": "clasp create --title \"google-directory-tree\" --rootDir ./appsscript",
+    "gstart": "clasp push --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@parcel/transformer-vue": "^2.8.2",
+    "@types/google-apps-script": "^1.0.56",
+    "nodemon": "^2.0.20",
+    "parcel": "^2.8.2"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  }
+}
